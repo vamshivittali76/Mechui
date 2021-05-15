@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   ),
                 ],
               ),
-              SearchBar('Search for restaurants, Cusines...'),
+              SearchBar('Search for mechanics and equipment...'),
               _widgetOptions.elementAt(_selectedIndex),
 
             ],

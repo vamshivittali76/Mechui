@@ -475,7 +475,7 @@ class _FoodTabState extends State<FoodTab> {
                                 decoration: BoxDecoration(
                                     color: AppColors.persianColor,
                                     borderRadius: BorderRadius.circular(5.0)),
-                                child: new Text('Well sanized equipment',
+                                child: new Text('Well sanitized equipment',
                                     style: new TextStyle(
                                         fontSize: 12.0,
                                         color: AppColors.whiteColor)),

@@ -4,13 +4,12 @@ import 'package:mechui/constants/colors.dart';
 import 'package:mechui/constants/textstyles.dart';
 import 'package:mechui/widgets/rating.dart';
 
- class MechTab extends StatefulWidget {
-  _Mechtabstate createstate() => _Mechtabstate();
-
-  noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+class FoodTab extends StatefulWidget {
+  @override
+  _FoodTabState createState() => _FoodTabState();
 }
 
-class _Mechtabstate extends State<MechTab> {
+class _FoodTabState extends State<FoodTab> {
   double rating = 3.5;
   @override
   Widget build(BuildContext context) {
@@ -30,10 +29,10 @@ class _Mechtabstate extends State<MechTab> {
               child: ListTile(
                   trailing: Icon(Icons.arrow_forward),
                   title: Text(
-                    'See Safe & efficient mechanics',
+                    'See Safe & Experienced Mechanics',
                     style: TextStyles.h1Heading,
                   ),
-                  subtitle: Text('delivering to you right now')),
+                  subtitle: Text('coming towards you right now')),
             ),
           ),
           Container(
@@ -43,14 +42,14 @@ class _Mechtabstate extends State<MechTab> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Lockdown Repairs',
+                  'Lockdown service',
                   style: TextStyles.h1Heading,
                 ),
                 SizedBox(
                   height: 5.0,
                 ),
                 Text(
-                      'Regular Service for your Vehicle',
+                  'Most Referred in your city',
                   style: TextStyles.subText,
                 ),
               ],
@@ -67,7 +66,7 @@ class _Mechtabstate extends State<MechTab> {
                       ClipRRect(
                           borderRadius: BorderRadius.circular(4.0),
                           child: Image.network(
-                            'https://cdn.mos.cms.futurecdn.net/EdWxecuAFcnWdrctHrQ9Fa-1024-80.jpg.webp',
+                            'https://cdn.mos.cms.futurecdn.net/EdWxecuAFcnWdrctHrQ9Fa-1024-80.jpg',
                             height: 80,
                             width: 80,
                             fit: BoxFit.cover,
@@ -76,6 +75,22 @@ class _Mechtabstate extends State<MechTab> {
                         height: 5.0,
                       ),
                       Text('Flat Tire')
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(4.0),
+                          child: Image.network(
+                            'https://images.unsplash.com/photo-1614770149183-b61578d33df7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80',
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          )),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text('Break liners')
                     ],
                   ),
                   Column(
@@ -99,23 +114,7 @@ class _Mechtabstate extends State<MechTab> {
                       ClipRRect(
                           borderRadius: BorderRadius.circular(4.0),
                           child: Image.network(
-                            'https://cdn.pixabay.com/photo/2016/08/30/18/45/grilled-1631727_1280.jpg',
-                            height: 80,
-                            width: 80,
-                            fit: BoxFit.cover,
-                          )),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Text('Chicken')
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(4.0),
-                          child: Image.network(
-                            'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/09/08/728662-petrol.jpg',
+                            'https://st4.depositphotos.com/25484796/29325/i/450/depositphotos_293259004-stock-photo-man-works-at-the-car.jpg',
                             height: 80,
                             width: 80,
                             fit: BoxFit.cover,
@@ -141,6 +140,22 @@ class _Mechtabstate extends State<MechTab> {
                       ClipRRect(
                           borderRadius: BorderRadius.circular(4.0),
                           child: Image.network(
+                            'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/09/08/728662-petrol.jpg',
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.cover,
+                          )),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text('Fuel')
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(4.0),
+                          child: Image.network(
                             'https://eadn-wc01-3399155.nxedge.io/cdn/wp-content/uploads/2019/03/fix-car-door-dent.jpg',
                             height: 80,
                             width: 80,
@@ -149,7 +164,7 @@ class _Mechtabstate extends State<MechTab> {
                       SizedBox(
                         height: 5.0,
                       ),
-                      Text('Door')
+                      Text('Car Door')
                     ],
                   ),
                   Column(
@@ -182,22 +197,6 @@ class _Mechtabstate extends State<MechTab> {
                         height: 5.0,
                       ),
                       Text('Rim')
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(4.0),
-                          child: Image.network(
-                            'https://www.thesilverlining.com/hs-fs/hubfs/wiperblades.jpg?width=450&height=390&name=wiperblades.jpg',
-                            height: 80,
-                            width: 80,
-                            fit: BoxFit.cover,
-                          )),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Text('Wipers')
                     ],
                   ),
                 ],
@@ -301,7 +300,7 @@ class _Mechtabstate extends State<MechTab> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Text(
-                                  'Safe and Efficient',
+                                  'Safe and Hygenic',
                                   style: TextStyles.highlighterOne,
                                 )
                               ],
@@ -326,7 +325,7 @@ class _Mechtabstate extends State<MechTab> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Text(
-                                  'Fastest Repairs',
+                                  'Fastest Installations',
                                   style: TextStyles.highlighterOne,
                                 )
                               ],
@@ -421,14 +420,14 @@ class _Mechtabstate extends State<MechTab> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  '20 Mechanics around you',
+                  '69 garages around you',
                   style: TextStyles.h1Heading,
                 ),
                 SizedBox(
                   height: 5.0,
                 ),
                 Text(
-                  'Everything in a list - Order Now!!',
+                  'Everything in a list - Order Now!',
                   style: TextStyles.subText,
                 ),
               ],
@@ -476,7 +475,7 @@ class _Mechtabstate extends State<MechTab> {
                                 decoration: BoxDecoration(
                                     color: AppColors.persianColor,
                                     borderRadius: BorderRadius.circular(5.0)),
-                                child: new Text('Well sanitized Equipment',
+                                child: new Text('Well sanized equipment',
                                     style: new TextStyle(
                                         fontSize: 12.0,
                                         color: AppColors.whiteColor)),
@@ -517,7 +516,7 @@ class _Mechtabstate extends State<MechTab> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Tow Truck',
+                          'Wipers',
                           style: TextStyles.actionTitle,
                         ),
                         Padding(
@@ -532,16 +531,16 @@ class _Mechtabstate extends State<MechTab> {
                               SizedBox(width: 3.0,),
                               Text('3.5',style: TextStyles.paragraphBold,),
                               SizedBox(width: 3.0,),
-                              Text('(5548 Customer Reviews)',style: TextStyles.paragraphdemibold,)
+                              Text('(100 Reviews)',style: TextStyles.paragraphdemibold,)
                             ],
                           ),
                         ),
                         Text(
-                          'Car,Bike,Auto,Truck',
+                          'Car, Bike',
                           style: TextStyles.subText,
                         ),
                         Text(
-                          '\u20B9200 per Repair'+ String.fromCharCode(0x00B7) +' 44 mins',
+                          '\u20B9200 per person '+ String.fromCharCode(0x00B7) +' 44 mins',
                           style: TextStyles.subText,
                         ),
                       ],
@@ -598,7 +597,7 @@ class _Mechtabstate extends State<MechTab> {
                                 decoration: BoxDecoration(
                                     color: AppColors.persianColor,
                                     borderRadius: BorderRadius.circular(5.0)),
-                                child: new Text('Mechanic hand wash',
+                                child: new Text('Rider hand wash',
                                     style: new TextStyle(
                                         fontSize: 12.0,
                                         color: AppColors.whiteColor)),
@@ -626,7 +625,7 @@ class _Mechtabstate extends State<MechTab> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Quick Repairs!!',
+                          'Awesome!',
                           style: TextStyles.actionTitle,
                         ),
                         Padding(
@@ -641,16 +640,16 @@ class _Mechtabstate extends State<MechTab> {
                               SizedBox(width: 3.0,),
                               Text('3.5',style: TextStyles.paragraphBold,),
                               SizedBox(width: 3.0,),
-                              Text('(52 Customer Reviews)',style: TextStyles.paragraphdemibold,)
+                              Text('(52 customer Reviews)',style: TextStyles.paragraphdemibold,)
                             ],
                           ),
                         ),
                         Text(
-                          'Specialized in Bike repairs',
+                          'Specializes in cars',
                           style: TextStyles.subText,
                         ),
                         Text(
-                          '\u20B9100 per Repair '+ String.fromCharCode(0x00B7) +' 44 mins '+ String.fromCharCode(0x00B7) + ' Closes in 40 Mins',
+                          '\u20B9100 per person '+ String.fromCharCode(0x00B7) +' 44 mins '+ String.fromCharCode(0x00B7) + ' Closes in 40 Mins',
                           style: TextStyles.subText,
                         ),
                       ],

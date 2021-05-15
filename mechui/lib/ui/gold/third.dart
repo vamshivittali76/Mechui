@@ -186,6 +186,7 @@ class _ThirdPageState extends State<ThirdPage> {
               height: 70.0,
               padding: EdgeInsets.symmetric(horizontal: 15.0),
               width: double.infinity,
+              // ignore: deprecated_member_use
               child: RaisedButton(
 
 color: AppColors.highlighterPink,

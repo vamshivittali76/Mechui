@@ -41,6 +41,7 @@ class _FeedState extends State<Feed> {
                         radius: 20.0,
                         backgroundImage: NetworkImage('https://cdn.dribbble.com/users/3020080/screenshots/15085975/media/25530f071f257c7c94ee33d75441fa62.png'),
                       ),
+                      // ignore: deprecated_member_use
                       trailing: new OutlineButton(
                           color: AppColors.highlighterPink,
                           child: new Text("Follow",style: TextStyle(
@@ -71,6 +72,7 @@ class _FeedState extends State<Feed> {
                     ),
                     Container(
                       width: double.infinity,
+                      // ignore: deprecated_member_use
                       child: OutlineButton(
 
                           highlightedBorderColor: AppColors.highlighterPink,
@@ -133,6 +135,7 @@ class _FeedState extends State<Feed> {
                         radius: 20.0,
                         backgroundImage: NetworkImage('https://cdn.dribbble.com/users/3020080/screenshots/15085975/media/25530f071f257c7c94ee33d75441fa62.png'),
                       ),
+                      // ignore: deprecated_member_use
                       trailing: new OutlineButton(
                           color: AppColors.highlighterPink,
                           child: new Text("Follow",style: TextStyle(
@@ -163,6 +166,7 @@ class _FeedState extends State<Feed> {
                     ),
                     Container(
                       width: double.infinity,
+                      // ignore: deprecated_member_use
                       child: OutlineButton(
 
                           highlightedBorderColor: AppColors.highlighterPink,

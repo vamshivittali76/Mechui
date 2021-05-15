@@ -3,6 +3,7 @@ import 'package:mechui/constants/colors.dart';
 import 'package:mechui/ui/delivery/food.dart';
 import 'package:mechui/ui/delivery/self.dart';
 import 'package:mechui/ui/delivery/work.dart';
+import 'package:mechui/ui/delivery/grocery.dart';
 
 class FirstPage extends StatefulWidget {
   @override
@@ -64,13 +65,10 @@ class _FirstPageState extends State<FirstPage> with TickerProviderStateMixin {
         Expanded(
           child: TabBarView(
             controller: tabController,
-            children: <Widget>[MechTab(), GroceryTab(), WorkTab(), SelfTab()],
+            children: <Widget>[FoodTab(), GroceryTab(), WorkTab(), SelfTab()],
                       ),
                     )
                   ]),
                 );
               }
-            
-              // ignore: non_constant_identifier_names
-              GroceryTab() {}
 }

@@ -37,13 +37,13 @@ class _SecondPageState extends State<SecondPage> with TickerProviderStateMixin{
               tabs: <Widget>[
                 Tab(
                   child: Text(
-                    'dining',
+                    'Repairs',
                     style: TextStyle(fontSize: 20, letterSpacing: 2.0),
                   ),
                 ),
                 Tab(
                   child: Text(
-                    'nightlife',
+                    'Towing',
                     style: TextStyle(fontSize: 20, letterSpacing: 2.0),
                   ),
                 ),
@@ -52,13 +52,10 @@ class _SecondPageState extends State<SecondPage> with TickerProviderStateMixin{
             Expanded(
               child: TabBarView(
                 controller: tabController,
-                children: <Widget>[
-                  Dining, NightLife()],
-                                ),
-                              )
-                            ]),
-                      );
-                    }
-                   // ignore: non_constant_identifier_names
-                   get Dining async {}
+                children: <Widget>[Dining(), NightLife()],
+              ),
+            )
+          ]),
+    );
+  }
 }

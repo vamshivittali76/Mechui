@@ -453,12 +453,12 @@ class _NightLifeState extends State<NightLife> {
                               SizedBox(width: 3.0,),
                               Text('4.5',style: TextStyles.paragraphBold,),
                               SizedBox(width: 3.0,),
-                              Text('(888 Dining Reviews)',style: TextStyles.paragraphdemibold,)
+                              Text('(100 customer Reviews)',style: TextStyles.paragraphdemibold,)
                             ],
                           ),
                         ),
                         Text(
-                          'Dessert Parlor - Desserts, Ice Cream',
+                          'Krishna Automotives',
                           style: TextStyles.subText,
                         ),
                         Text('1.2 km '+ String.fromCharCode(0x00B7) +' Banajara Hills, Hyderabad'),
@@ -526,7 +526,7 @@ class _NightLifeState extends State<NightLife> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Polar Bear',
+                          'MRF tires',
                           style: TextStyles.actionTitle,
                         ),
                         Padding(
@@ -546,7 +546,7 @@ class _NightLifeState extends State<NightLife> {
                           ),
                         ),
                         Text(
-                          'Dessert Parlor - Desserts, Ice Cream',
+                          'Krishna Automotives',
                           style: TextStyles.subText,
                         ),
                         Text('2.6 km '+ String.fromCharCode(0x00B7) +' Banjara Hills, Hyderabad'),

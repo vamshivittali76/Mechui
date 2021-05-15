@@ -4,12 +4,12 @@ import 'package:mechui/constants/colors.dart';
 import 'package:mechui/constants/textstyles.dart';
 import 'package:mechui/widgets/rating.dart';
 
-class NightLife extends StatefulWidget {
+class Dining extends StatefulWidget {
   @override
-  _NightLifeState createState() => _NightLifeState();
+  _DiningState createState() => _DiningState();
 }
 
-class _NightLifeState extends State<NightLife> {
+class _DiningState extends State<Dining> {
   double rating = 3.5;
   double rating1 = 4.5;
   @override
@@ -199,7 +199,7 @@ class _NightLifeState extends State<NightLife> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
-                                      'Spare Parts',
+                                      'Book a Mechanic',
                                       style: TextStyles.highlighterOne,
                                     ),
 
@@ -221,7 +221,7 @@ class _NightLifeState extends State<NightLife> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text('Collaborations',style: TextStyles.h1Heading,),
+                  Text('Collections',style: TextStyles.h1Heading,),
                   Text('see all',style: TextStyles.subTextRed,)
                 ],
               ),
@@ -235,37 +235,101 @@ class _NightLifeState extends State<NightLife> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Center(
-                      child: Container(
-                        constraints:
-                        new BoxConstraints.expand(height: 200.0, width: 165),
-                        alignment: Alignment.bottomLeft,
-                        padding:
-                        new EdgeInsets.only(left: 8.0, bottom: 4.0),
-                        decoration: new BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          image: new DecorationImage(
+                  Center(
+                    child: Container(
+                      constraints:
+                      new BoxConstraints.expand(height: 200.0, width: 165),
+                      alignment: Alignment.bottomLeft,
+                      padding:
+                      new EdgeInsets.only(left: 8.0, bottom: 4.0),
+                      decoration: new BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        image: new DecorationImage(
 
-                            image: new NetworkImage(
-                                'https://st2.depositphotos.com/1835351/5624/i/950/depositphotos_56245793-stock-photo-group-of-automotive-tires.jpg'),
-                            fit: BoxFit.fitHeight,
+                          image: new NetworkImage(
+                              'https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=612&q=80'),
+                          fit: BoxFit.fitHeight,
 
-                          ),
                         ),
-                        child: Container(
+                      ),
+                      child: Container(
 
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              new Text('Trending this\nWeek',
-                                  style:TextStyles.actionTitleWhite),
-                              Text('30 Places',style: TextStyles.highlighterOne,)
-                            ],
-                          ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            new Text('Top Searches this\nWeek',
+                                style:TextStyles.actionTitleWhite),
+                            Text('30 Places',style: TextStyles.highlighterOne,)
+                          ],
                         ),
                       ),
                     ),
+                  ),
+                  SizedBox(width: 10,),
+                  Center(
+                    child: Container(
+                      constraints:
+                      new BoxConstraints.expand(height: 200.0, width: 165),
+                      alignment: Alignment.bottomLeft,
+                      padding:
+                      new EdgeInsets.only(left: 8.0, bottom: 4.0),
+                      decoration: new BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        image: new DecorationImage(
+
+                          image: new NetworkImage(
+                              'https://images.unsplash.com/photo-1597739259088-b444563677ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'),
+                          fit: BoxFit.fitHeight,
+
+                        ),
+                      ),
+                      child: Container(
+
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            new Text("Hyderabad's \nFinest",
+                                style:TextStyles.actionTitleWhite),
+                            Text('124 Places',style: TextStyles.highlighterOne,)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                    SizedBox(width: 10,),
+                  Center(
+                    child: Container(
+                      constraints:
+                      new BoxConstraints.expand(height: 200.0, width: 165),
+                      alignment: Alignment.bottomLeft,
+                      padding:
+                      new EdgeInsets.only(left: 8.0, bottom: 4.0),
+                      decoration: new BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        image: new DecorationImage(
+
+                          image: new NetworkImage(
+                              'https://images.unsplash.com/photo-1599840209998-01e3b560946b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=370&q=80'),
+                          fit: BoxFit.fitHeight,
+
+                        ),
+                      ),
+                      child: Container(
+
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            new Text('Newly Opened',
+                                style:TextStyles.actionTitleWhite),
+                            Text('6 Places',style: TextStyles.highlighterOne,)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                     SizedBox(width: 10,),
                     Center(
                       child: Container(
@@ -279,71 +343,7 @@ class _NightLifeState extends State<NightLife> {
                           image: new DecorationImage(
 
                             image: new NetworkImage(
-                                'https://st2.depositphotos.com/1835351/5624/i/950/depositphotos_56245793-stock-photo-group-of-automotive-tires.jpg'),
-                            fit: BoxFit.fitHeight,
-
-                          ),
-                        ),
-                        child: Container(
-
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              new Text("Hyderabad's \nFinest",
-                                  style:TextStyles.actionTitleWhite),
-                              Text('100 Places',style: TextStyles.highlighterOne,)
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10,),
-                    Center(
-                      child: Container(
-                        constraints:
-                        new BoxConstraints.expand(height: 200.0, width: 165),
-                        alignment: Alignment.bottomLeft,
-                        padding:
-                        new EdgeInsets.only(left: 8.0, bottom: 4.0),
-                        decoration: new BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          image: new DecorationImage(
-
-                            image: new NetworkImage(
-                                'https://thumbs.dreamstime.com/z/indian-mechanic-showing-his-power-car-shop-service-profession-gesture-concept-happy-smiling-over-background-170933189.jpg'),
-                            fit: BoxFit.fitHeight,
-
-                          ),
-                        ),
-                        child: Container(
-
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              new Text('Newly Opened',
-                                  style:TextStyles.actionTitleWhite),
-                              Text('6 Places',style: TextStyles.highlighterOne,)
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10,),
-                    Center(
-                      child: Container(
-                        constraints:
-                        new BoxConstraints.expand(height: 200.0, width: 165),
-                        alignment: Alignment.bottomLeft,
-                        padding:
-                        new EdgeInsets.only(left: 8.0, bottom: 4.0),
-                        decoration: new BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          image: new DecorationImage(
-
-                            image: new NetworkImage(
-                                'https://thumbs.dreamstime.com/z/indian-mechanic-showing-his-power-car-shop-service-profession-gesture-concept-happy-smiling-over-background-170933189.jpg'),
+                                'https://images.unsplash.com/photo-1609676678473-fc67abd243d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=335&q=80'),
                             fit: BoxFit.fitHeight,
 
                           ),
@@ -375,7 +375,7 @@ class _NightLifeState extends State<NightLife> {
                           image: new DecorationImage(
 
                             image: new NetworkImage(
-                                'https://thumbs.dreamstime.com/z/indian-mechanic-showing-his-power-car-shop-service-profession-gesture-concept-happy-smiling-over-background-170933189.jpg'),
+                                'https://images.unsplash.com/photo-1571944641628-04500f8b3d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'),
                             fit: BoxFit.fitHeight,
 
                           ),
@@ -386,7 +386,7 @@ class _NightLifeState extends State<NightLife> {
                             mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              new Text('Best of\nGold',
+                              new Text('Legends of \nGold',
                                   style:TextStyles.actionTitleWhite),
                               Text('10 Places',style: TextStyles.highlighterOne,)
                             ],
@@ -394,7 +394,7 @@ class _NightLifeState extends State<NightLife> {
                         ),
                       ),
                     ),
-                  ],),
+                ],),
               ),
             ),
           ),
@@ -424,7 +424,7 @@ class _NightLifeState extends State<NightLife> {
                         image: new DecorationImage(
 
                           image: new NetworkImage(
-                              'https://thumbs.dreamstime.com/z/indian-mechanic-showing-his-power-car-shop-service-profession-gesture-concept-happy-smiling-over-background-170933189.jpg'),
+                              'https://images.unsplash.com/photo-1571944641628-04500f8b3d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'),
                           fit: BoxFit.fill,
 
                         ),
@@ -438,7 +438,7 @@ class _NightLifeState extends State<NightLife> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Corner House',
+                          'Corner Garage',
                           style: TextStyles.actionTitle,
                         ),
                         Padding(
@@ -453,17 +453,17 @@ class _NightLifeState extends State<NightLife> {
                               SizedBox(width: 3.0,),
                               Text('4.5',style: TextStyles.paragraphBold,),
                               SizedBox(width: 3.0,),
-                              Text('(50+ customer Reviews)',style: TextStyles.paragraphdemibold,)
+                              Text('(80 Customer Reviews)',style: TextStyles.paragraphdemibold,)
                             ],
                           ),
                         ),
                         Text(
-                          'Kumars Automotives - tires and More...',
+                          'Krishna Automotive',
                           style: TextStyles.subText,
                         ),
-                        Text('1.2 km '+ String.fromCharCode(0x00B7) +'Banjara Hills, Hyderabad'),
+                        Text('1.2 km '+ String.fromCharCode(0x00B7) +' Nallakunta, Hyderabad'),
                         Text(
-                          '\u20B9350 for two tires',
+                          '\u20B9350 for two',
                           style: TextStyles.subText,
                         ),
                       ],
@@ -503,7 +503,7 @@ class _NightLifeState extends State<NightLife> {
                         image: new DecorationImage(
 
                           image: new NetworkImage(
-                              'https://thumbs.dreamstime.com/z/indian-mechanic-showing-his-power-car-shop-service-profession-gesture-concept-happy-smiling-over-background-170933189.jpg'),
+                              'https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'),
                           fit: BoxFit.fill,
 
                         ),
@@ -526,7 +526,7 @@ class _NightLifeState extends State<NightLife> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'MRF Car Tire',
+                          'MRF Tires',
                           style: TextStyles.actionTitle,
                         ),
                         Padding(
@@ -541,17 +541,17 @@ class _NightLifeState extends State<NightLife> {
                               SizedBox(width: 3.0,),
                               Text('3.5',style: TextStyles.paragraphBold,),
                               SizedBox(width: 3.0,),
-                              Text('(108 customer Reviews)',style: TextStyles.paragraphdemibold,)
+                              Text('(108 Customers Reviews)',style: TextStyles.paragraphdemibold,)
                             ],
                           ),
                         ),
                         Text(
-                          'kumar automotive - tires and more...',
+                          'Krishna Automotives',
                           style: TextStyles.subText,
                         ),
-                        Text('2.6 km '+ String.fromCharCode(0x00B7) +' Mg Road, Bangalore'),
+                        Text('2.6 km '+ String.fromCharCode(0x00B7) +' Nallakunta, Hyderabad'),
                         Text(
-                          '\u20B9400 for two tires',
+                          '\u20B9400 for two',
                           style: TextStyles.subText,
                         ),
                       ],
